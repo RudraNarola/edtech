@@ -42,6 +42,9 @@ if($result)
         $sql = "INSERT INTO `users` (`firstname`, `lastname`, `emailid`, `password`, `reg_time`)
         VALUES ('$firstname', '$lastname', '$emailid', '$password', current_timestamp());";
 
+        // $sql =  "INSERT INTO `users` (`firstname`, `lastname`, `emailid`, `password`, `reg_time`) 
+        // VALUES ('drddas', 'aedaded', 'edaeW@eeea.com', 'adef4fw4', current_timestamp());";
+
         if(mysqli_query($conn, $sql))
         {
             $message = "You have successfully registered!!";
