@@ -2,7 +2,7 @@ import React, { Component } from "react";
 export default class Login extends Component {
   render() {
     return (
-      <form method="POST" action="login_validator.php">
+      <form method="POST" action="http://localhost:3000/login_validator.php">
         <h3>Log In</h3>
         <div className="mb-3">
           <label>Email address</label>

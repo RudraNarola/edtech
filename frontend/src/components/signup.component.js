@@ -2,7 +2,7 @@ import React, { Component } from "react";
 export default class SignUp extends Component {
   render() {
     return (
-      <form method="POST" action="new_data_entry.php">
+      <form method="POST" action="http://localhost:3000/new_data_entry.php">
         <h3>Sign Up</h3>
         <div className="mb-3">
           <label>First name</label>
