@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 export default class Login extends Component {
   render() {
     return (
-      <form>
+      <form method="POST" action="login_validator.php">
         <h3>Log In</h3>
         <div className="mb-3">
           <label>Email address</label>
           <input
             type="email"
+            name="email"
             className="form-control"
             placeholder="Enter email"
           />
@@ -16,21 +17,10 @@ export default class Login extends Component {
           <label>Password</label>
           <input
             type="password"
+            name="password"
             className="form-control"
             placeholder="Enter password"
           />
-        </div>
-        <div className="mb-3">
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
-            />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
-            </label>
-          </div>
         </div>
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
@@ -41,6 +31,6 @@ export default class Login extends Component {
           Forgot <a href="#">password?</a>
         </p>
       </form>
-    )
+    );
   }
 }
